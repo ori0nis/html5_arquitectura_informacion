@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta title="Reading habits test" />
+    <meta
+      description="This is a survey intended to find out the user's reading habits and help them read more"
+    />
+    <meta lang="en" translate="no" />
+    <meta author="Oihane" />
+    <meta
+      keywords="books, literature, reading, reading habits, self growth, productivity"
+    />
+    <link rel="icon" href="./assets/favicon.jpg" />
+    <title>Reading habits test</title>
+  </head>
+  <body>
+    <header>
+      <img src="./assets/image0_0.jpg" width="350" height="350" />
+      <nav id="navbar">
+        <li><a href="#weekly-reading">Weekly reading</a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+      </nav>
+    </header>
+    <main>
+      <h1>Reading habits test</h1>
+      <blockquote>
+        <cite
+          >“If a book is well written, I always find it too short.” ― Jane
+          Austen</cite
+        >
+      </blockquote>
+      <p>
+        Welcome to this reading habits test. Complete the following survey to
+        let us know how much you love to read.
+      </p>
+      <form
+        method="post"
+        action="/"
+        id="survey-form"
+        name="survey-form"
+        enctype="application/x-www-form-urlencoded"
+      >
+        <fieldset>
+          <legend id="weekly-reading">How many days a week do you read?</legend>
+          <label for="one-to-two">
+            <input
+              type="radio"
+              id="one-to-two"
+              name="weekly-reading"
+              value="one-to-two"
+            />1-2 days a week</label
+          >
+          <label for="three-to-five">
+            <input
+              type="radio"
+              id="three-to-five"
+              name="weekly-reading"
+              value="three-to-five"
+            />3-5 days a week</label
+          >
+          <label for="five-to-seven">
+            <input
+              type="radio"
+              id="five-to-seven"
+              name="weekly-reading"
+              value="five-to-seven"
+            />5-7 days a week</label
+          >
+          <p>
+            A big part of generating a love for reading is
+            <strong>turning it into a daily habit</strong>. The more days you
+            read a week, the more you will get into the stories you read, and
+            the more you will enjoy reading.
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>What's your favorite book genre?</legend>
+          <label for="genre">
+            <select id="genre">
+              <option value="fantasy">Fantasy</option>
+              <option value="fiction">Fiction</option>
+              <option value="non-fiction">Non-fiction</option>
+              <option value="historical-fiction">Historical fiction</option>
+              <option value="crime">Crime</option>
+              <option value="science-fiction">Science fiction</option>
+              <option value="essay">Essay</option>
+              <option value="romance">Romance</option>
+            </select>
+          </label>
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>
