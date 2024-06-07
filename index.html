@@ -17,182 +17,264 @@
   </head>
   <body>
     <header>
-      <img src="./assets/image0_0.jpg" width="350" height="350" />
+      <img
+        src="./assets/image0_0.jpg"
+        alt="fantastic image of a teenage girl reading in a library, with a light being flying over her book"
+        title="reading is a magical journey"
+        width="350"
+        height="350"
+      />
       <nav id="navbar">
         <li><a href="#weekly-reading">Test</a></li>
-        <li><a href="#">Discover Goodreads</a></li>
-        <li><a href="#"></a></li>
+        <li><a href="#discover-goodreads">Discover Goodreads</a></li>
+        <li><a href="#contact-us">Contact us</a></li>
       </nav>
     </header>
     <main>
-      <h1>Reading habits test</h1>
-      <blockquote>
-        <cite
-          >“If a book is well written, I always find it too short.” ― Jane
-          Austen</cite
+      <section>
+        <h1>Reading habits test</h1>
+        <blockquote>
+          <cite
+            >“If a book is well written, I always find it too short.” ― Jane
+            Austen</cite
+          >
+        </blockquote>
+        <h3>
+          Welcome to this reading habits test. Complete the following survey to
+          let us know how much you love to read.
+        </h3>
+      </section>
+      <section>
+        <form
+          method="post"
+          action="/"
+          id="survey-form"
+          name="survey-form"
+          enctype="application/x-www-form-urlencoded"
         >
-      </blockquote>
-      <p>
-        Welcome to this reading habits test. Complete the following survey to
-        let us know how much you love to read.
-      </p>
-      <form
-        method="post"
-        action="/"
-        id="survey-form"
-        name="survey-form"
-        enctype="application/x-www-form-urlencoded"
-      >
-        <fieldset>
-          <legend id="weekly-reading">How many days a week do you read?</legend>
-          <label for="one-to-two">
-            <input
-              type="radio"
-              id="one-to-two"
-              name="weekly-reading"
-              value="one-to-two"
-            />1-2 days a week</label
-          >
-          <label for="three-to-five">
-            <input
-              type="radio"
-              id="three-to-five"
-              name="weekly-reading"
-              value="three-to-five"
-            />3-5 days a week</label
-          >
-          <label for="five-to-seven">
-            <input
-              type="radio"
-              id="five-to-seven"
-              name="weekly-reading"
-              value="five-to-seven"
-            />5-7 days a week</label
-          >
-          <p>
-            A big part of generating a love for reading is
-            <strong>turning it into a daily habit</strong>. The more days you
-            read a week, the more you will get into the stories you read, and
-            the more you will enjoy reading.
-          </p>
-        </fieldset>
-        <fieldset>
-          <legend>What's your favorite book genre?</legend>
-          <label for="genre">
-            <select id="genre">
-              <option value="fantasy">Fantasy</option>
-              <option value="fiction">Fiction</option>
-              <option value="non-fiction">Non-fiction</option>
-              <option value="historical-fiction">Historical fiction</option>
-              <option value="crime">Crime</option>
-              <option value="science-fiction">Science fiction</option>
-              <option value="essay">Essay</option>
-              <option value="romance">Romance</option>
-            </select>
+          <fieldset>
+            <legend id="weekly-reading">
+              How many days a week do you read?
+            </legend>
+            <label for="one-to-two">
+              <input
+                type="radio"
+                id="one-to-two"
+                name="weekly-reading"
+                value="one-to-two"
+              />1-2 days a week</label
+            >
+            <label for="three-to-five">
+              <input
+                type="radio"
+                id="three-to-five"
+                name="weekly-reading"
+                value="three-to-five"
+              />3-5 days a week</label
+            >
+            <label for="five-to-seven">
+              <input
+                type="radio"
+                id="five-to-seven"
+                name="weekly-reading"
+                value="five-to-seven"
+              />5-7 days a week</label
+            >
+            <p>
+              A big part of generating a love for reading is
+              <strong>turning it into a daily habit</strong>. The more days you
+              read a week, the more you will get into the stories you read, and
+              the more you will enjoy reading.
+            </p>
+          </fieldset>
+          <fieldset>
+            <legend>What's your favorite book genre?</legend>
+            <label for="genre">
+              <select id="genre">
+                <option value="fantasy">Fantasy</option>
+                <option value="fiction">Fiction</option>
+                <option value="non-fiction">Non-fiction</option>
+                <option value="historical-fiction">Historical fiction</option>
+                <option value="crime">Crime</option>
+                <option value="science-fiction">Science fiction</option>
+                <option value="essay">Essay</option>
+                <option value="romance">Romance</option>
+              </select>
+            </label>
+            <p>
+              They say that reading taste evolves with age, but how cool is it
+              to discover a new fantasy trilogy well into your 30s?
+            </p>
+          </fieldset>
+          <fieldset>
+            <legend>How long did it take you to finish your last book?</legend>
+            <label for="reading-time"
+              >Enter your response:
+              <input
+                type="text"
+                id="reading-time"
+                name="reading-time"
+                placeholder="enter your response..."
+                required
+              />
+            </label>
+            <legend>How long was your book?</legend>
+            <label for="book-length">
+              <input
+                type="text"
+                id="book-length"
+                name="book-length"
+                placeholder="enter your response..."
+                required
+              />
+            </label>
+            <p>
+              What do you mean <cite>"War and Peace"</cite> took you more than
+              three days to finish?!
+            </p>
+          </fieldset>
+          <fieldset>
+            <legend>
+              Choose the three scenarios that sound best for some reading time:
+            </legend>
+            <label for="reading-bed">
+              <input
+                type="checkbox"
+                id="reading-bed"
+                name="reading-bed"
+                value="reading-bed"
+              />Right before bed</label
+            >
+            <label for="reading-cafe">
+              <input
+                type="checkbox"
+                id="reading-cafe"
+                name="reading-cafe"
+                value="reading-cafe"
+              />In a cozy café</label
+            >
+            <label for="reading-work">
+              <input
+                type="checkbox"
+                id="reading-work"
+                name="reading-work"
+                value="reading-work"
+              />In my work/school break</label
+            >
+            <label for="reading-commute">
+              <input
+                type="checkbox"
+                id="reading-commute"
+                name="reading-commute"
+                value="reading-commute"
+              />On public transport</label
+            >
+            <label for="reading-park">
+              <input
+                type="checkbox"
+                id="reading-park"
+                name="reading-park"
+                value="reading-park"
+              />At the park</label
+            >
+            <label for="reading-beach">
+              <input
+                type="checkbox"
+                id="reading-beach"
+                name="reading-beach"
+                value="reading-beach"
+              />At the beach</label
+            >
+            <p>Any time is good, but you've got to choose.</p>
+          </fieldset>
+          <fieldset>
+            <legend>
+              In your opinion, what's better when it comes to reading: quantity,
+              or quality?
+            </legend>
+            <label for="quantity-quality">
+              <textarea
+                id="quantity-quality"
+                name="quantity-quality"
+                rows="7"
+                cols="50"
+                placeholder="enter your response..."
+              ></textarea>
+            </label>
+          </fieldset>
+          <label for="submit"><input type="submit" id="submit" /></label>
+        </form>
+      </section>
+      <hr />
+      <section>
+        <h2 id="discover-goodreads">Discover Goodreads</h2>
+        <p>
+          If you want to improve your reading habits, Goodreads is the best
+          place to start. It's a social media platform where you can:
+        </p>
+        <ul>
+          <li>Create your own yearly reading challenge</li>
+          <li>Get new book recommendations based on what you like</li>
+          <li>Create bookshelves with your favorite books</li>
+          <li>Add friends and see what they're reading</li>
+          <li>Write your own reviews</li>
+        </ul>
+        <p>
+          Want to see Goodreads in action? Check out this video by BookTuber
+          <cite>Steeped in Books:</cite>
+        </p>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/HJtyZ5Kj0DU?si=3gIxLuQqXzfJueAi"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </section>
+      <hr />
+      <section>
+        <h2 id="contact-us">Contact us for more bookspiration!</h2>
+        <p>
+          Are you inspired to read more yet? If so, contact us to enter our
+          <strong>Private Reader's Club:</strong>
+        </p>
+        <form
+          method="post"
+          action="/"
+          id="user-info"
+          name="user-info"
+          enctype="application/x-www-form-urlencoded"
+        >
+          <legend>Enter your email:</legend>
+          <label for="email">
+            <input type="email" id="email" name="email" placeholder="email" />
           </label>
-          <p>
-            They say that reading taste evolves with age, but how cool is it to
-            discover a new fantasy trilogy well into your 30s?
-          </p>
-        </fieldset>
-        <fieldset>
-          <legend>How long did it take you to finish your last book?</legend>
-          <label for="reading-time"
-            >Enter your response:
+          <legend>Enter your name:</legend>
+          <label for="username">
             <input
               type="text"
-              id="reading-time"
-              name="reading-time"
-              placeholder="enter your response..."
-              required
+              id="username"
+              name="username"
+              placeholder="name"
             />
           </label>
-          <legend>How long was your book?</legend>
-          <label for="book-length">
-            <input
-              type="text"
-              id="book-length"
-              name="book-length"
-              placeholder="enter your response..."
-              required
-            />
-          </label>
-          <p>
-            What do you mean <cite>"War and Peace"</cite> took you more than
-            three days to finish?!
-          </p>
-        </fieldset>
-        <fieldset>
-          <legend>
-            Choose the three scenarios that sound best for some reading time:
-          </legend>
-          <label for="reading-bed">
-            <input
-              type="checkbox"
-              id="reading-bed"
-              name="reading-bed"
-              value="reading-bed"
-            />Right before bed</label
-          >
-          <label for="reading-cafe">
-            <input
-              type="checkbox"
-              id="reading-cafe"
-              name="reading-cafe"
-              value="reading-cafe"
-            />In a cozy café</label
-          >
-          <label for="reading-work">
-            <input
-              type="checkbox"
-              id="reading-work"
-              name="reading-work"
-              value="reading-work"
-            />In my work/school break</label
-          >
-          <label for="reading-commute">
-            <input
-              type="checkbox"
-              id="reading-commute"
-              name="reading-commute"
-              value="reading-commute"
-            />On public transport</label
-          >
-          <label for="reading-park">
-            <input
-              type="checkbox"
-              id="reading-park"
-              name="reading-park"
-              value="reading-park"
-            />At the park</label
-          >
-          <label for="reading-beach">
-            <input
-              type="checkbox"
-              id="reading-beach"
-              name="reading-beach"
-              value="reading-beach"
-            />At the beach</label
-          >
-          <p>Any time is good, but you've got to choose.</p>
-        </fieldset>
-        <fieldset>
-          <legend>
-            In your opinion, what's better when it comes to reading: quantity,
-            or quality?
-          </legend>
-          <label for="quantity-quality">
-            <textarea
-              id="quantity-quality"
-              name="quantity-quality"
-              rows="7"
-              cols="50"
-              placeholder="enter your response..."
-            ></textarea>
-          </label>
-        </fieldset>
-        <aside><iframe src=""</aside>
-      </form>
+          <label for="submit"><input type="submit" id="submit" /></label>
+        </form>
+      </section>
+      <!--- Sé que añadir br no es una práctica maravillosa, pero quería darle un look mejor al footer-->
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
     </main>
+    <footer>
+      <i>Magical Reading Club (c)</i>
+      <i>All rights reserved</i>
+    </footer>
   </body>
 </html>
